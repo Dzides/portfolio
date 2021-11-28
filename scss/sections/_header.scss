@@ -1,12 +1,16 @@
 .header {
     position: relative;
     padding-top: 75px;
-    min-height: 100vh;
+    min-height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: $bg;
     z-index: 0;
+
+    @include r(576) {
+        padding-top: 15px;
+    }
 
     &:before {
         content: '';
@@ -25,20 +29,23 @@
     }
 
     &__content {
-        margin-top: 320px;
+        margin-top: 28%;
 
         @include r(1200) {
             position: absolute;
             margin-top: 0;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-35%);
         }
     }
 
     &__text {
         display: block;
-        margin-bottom: 18px;
         font-size: 48px;
+
+        @include r(576) {
+            margin-bottom: 0;
+        }
 
         @include r(768) {
             font-size: 38px;
@@ -73,6 +80,11 @@
         bottom: 60px;
         left: 50%;
         transform: translateX(-50%);
+
+        @include r(576) {
+            font-size: 14px;
+            bottom: 50px;
+        }
 
         &:before {
             position: absolute;
