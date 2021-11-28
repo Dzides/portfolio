@@ -1,0 +1,117 @@
+.header {
+    position: relative;
+    padding-top: 75px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: $bg;
+    z-index: 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: #2352DE80;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        margin-top: 320px;
+
+        @include r(1200) {
+            position: absolute;
+            margin-top: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: 18px;
+        font-size: 48px;
+
+        @include r(768) {
+            font-size: 38px;
+        }
+
+        @include r(576) {
+            font-size: 28px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 90px;
+
+        @include r(768) {
+            font-size: 70px;
+        }
+
+        @include r(576) {
+            font-size: 40px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        font-weight: 600;
+        font-size: 18px;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:before {
+            position: absolute;
+            content: '';
+            background-image: url(../images/arrow-bottom.svg);
+            width: 37px;
+            height: 21px;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    @include r(768) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &+& {
+            margin-left: 35px;
+
+            @include r(992) {
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+    }
+
+}

@@ -1,0 +1,20 @@
+$bg: #fff;
+$text: #333;
+$secondary: #2352DE;
+
+@mixin r($width) {
+    @media only screen and (max-width: $width+ "px") {
+        @content;
+    }
+}
+
+//   @include r(1200)
+
+
+// @include r(992)
+
+
+// @include r(768)
+
+
+// @include r(576)
