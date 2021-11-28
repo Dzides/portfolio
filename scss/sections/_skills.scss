@@ -1,0 +1,101 @@
+.skills {
+    padding: 140px 0;
+    background-color: #F6F6F8;
+
+    @include r(768) {
+        padding: 80px 0;
+    }
+    @include r(576) {
+        padding: 53px 0 50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        @include r(576) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        max-width: 415px;
+        width: 100%;
+        margin-right: 90px;
+
+        @include r(768) {
+            margin-right: 30px;
+        }
+
+        @include r(576) {
+            max-width: 300px;
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+
+    }
+
+    &__progress {
+        position: relative;
+        width: 100%;
+
+        @include r(576) {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+
+        @include r(576) {
+            display: block;
+        }
+
+        &+& {
+            margin-top: 86px;
+
+            @include r(768) {
+                margin-top: 60px;
+            }
+
+            @include r(576) {
+                margin-top: 18px;
+            }
+        }
+    }
+
+    &__name {
+        width: 65px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @include r(576) {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    &__bar {
+        position: relative;
+        height: 32px;
+        max-width: 600px;
+        width: 100%;
+        background-color: #DBDBED;
+
+        @include r(576) {
+            max-width: 300px;
+        }
+    }
+
+    &__line {
+        position: absolute;
+        height: 32px;
+        background-color: $secondary;
+    }
+}
