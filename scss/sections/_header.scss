@@ -81,6 +81,7 @@
         bottom: 60px;
         left: 50%;
         transform: translateX(-50%);
+        transition: 0.3s;
 
         @include r(576) {
             font-size: 14px;
@@ -125,6 +126,7 @@
 
     &__link {
         font-weight: 600;
+        transition: 0.3s;
     }
 
 }
