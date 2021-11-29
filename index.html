@@ -10,7 +10,8 @@
     <title>Портфолио Ивана Иванова | Фронтенд - разработчик</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,67 +21,66 @@
 
         <div class="container">
 
-            <div class="header__top">
+            <nav class="menu">
 
-                <a class="logo header-logo" href="#">
-                    <img class="header-logo__img" src="images/logo.svg" alt="site logo">
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="Логотип сайта">
                 </a>
 
-                <div class="header__burger">
+                <button class="mobil-burger">
                     <span></span>
-                </div>
+                </button>
 
-                <nav class="menu">
+                <ul class="menu__list">
 
-                    <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            Обо мне
+                        </a>
+                    </li>
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="#about">
-                                Обо мне
-                            </a>
-                        </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#skills">
+                            Навыки
+                        </a>
+                    </li>
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="#skills">
-                                Навыки
-                            </a>
-                        </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Услуги
+                        </a>
+                    </li>
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Услуги
-                            </a>
-                        </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Порфолио
+                        </a>
+                    </li>
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Порфолио
-                            </a>
-                        </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Отзывы
+                        </a>
+                    </li>
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Отзывы
-                            </a>
-                        </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Контакты
-                            </a>
-                        </li>
+                </ul>
 
-                    </ul>
+            </nav>
 
-                </nav>
-
-            </div>
 
             <div class="header__content">
 
                 <h1 class="header__title">
                     Привет, я Иван Иванов
-                    <span>frontend-разработчик</span>
+                    <span>
+                        frontend-разработчик
+                    </span>
                 </h1>
 
             </div>
@@ -91,81 +91,142 @@
 
     </header>
 
-    <section class="about same-indent" id="about">
+    <main class="main">
 
-        <div class="container">
+        <section class="about same-indent" id="about">
 
-            <h2 class="title about__title">
-                Обо мне
-            </h2>
+            <div class="container">
 
-            <p class="about__text">
-                Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь
-                фронтенд-разработкой более года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не
-                мог понять за что взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один
-                интересный курс.
-            </p>
+                <div class="heading">
+                    <h2 class="title">
+                        Обо мне
+                    </h2>
+                </div>
 
-            <p class="about__text">
-                С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то сложнее.
-                Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через несколько месяцев
-                принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и примерами работ можно
-                ознакомиться ниже.
-            </p>
+                <p>
+                    Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь
+                    фронтенд-разработкой более года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу,
+                    не
+                    мог понять за что взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один
+                    интересный курс.
+                </p>
 
-        </div>
+                <p>
+                    С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то
+                    сложнее.
+                    Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через несколько
+                    месяцев
+                    принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и примерами работ можно
+                    ознакомиться ниже.
+                </p>
 
-    </section>
+            </div>
 
-    <section class="skills same-indent" id="skills">
+        </section>
 
-        <div class="container">
+        <section class="skills same-indent" id="skills">
 
-            <h2 class="title skills__title">
-                Навыки
-            </h2>
+            <div class="container">
 
-            <div class="skills__wrapper">
+                <div class="heading">
+                    <h2 class="title">
+                        Навыки
+                    </h2>
+                </div>
 
-                <div class="skills__image">
+                <div class="skills__wrapper">
 
-                    <img class="skills__self" src="images/portrait.jpg" alt="Фото Ивана Иванова">
+                    <img class="skills__image" src="images/portrait.jpg" alt="Фото Ивана Иванова">
+
+                    <ul class="skills__progress">
+
+                        <li class="skills__item">
+                            <span class="skills__name">html</span>
+                            <div class="skills__bar">
+                                <div class="skills__line" style="width: 85%;">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item">
+                            <span class="skills__name">css</span>
+                            <div class="skills__bar">
+                                <div class="skills__line" style="width: 80%;">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item">
+                            <span class="skills__name">js</span>
+                            <div class="skills__bar">
+                                <div class="skills__line" style="width: 60%;">
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
 
                 </div>
 
-                <div class="skills__progress">
+            </div>
 
-                    <div class="skills__item">
-                        <div class="skills__name">html</div>
-                        <div class="skills__bar">
-                            <span class="skills__line" style="width: 85%;">
-                            </span>
-                        </div>
+        </section>
+
+        <section class="services same-indent">
+
+            <div class="container">
+
+                <div class="heading">
+                    <h2 class="title">
+                        Услуги
+                    </h2>
+                </div>
+
+                <div class="services__wrapper">
+
+                    <div class="services__item services__item--code">
+
+                        <h3 class="services__subtitle">
+                            Вёрстка проектов
+                        </h3>
+
+                        <p>
+                            Сделаю качественную вёрстку вашего проекта по предоставленному макету или примеру
+                        </p>
+
                     </div>
 
-                    <div class="skills__item">
-                        <div class="skills__name">css</div>
-                        <div class="skills__bar">
-                            <div class="skills__line" style="width: 80%;">
-                            </div>
-                        </div>
+                    <div class="services__item  services__item--dev">
+
+                        <h3 class="services__subtitle">
+                            Посадка на CMS
+                        </h3>
+
+                        <p>
+                            Интегрирую ваш проект в одну из популярных CMS
+                        </p>
+
                     </div>
 
-                    <div class="skills__item">
-                        <div class="skills__name">js</div>
-                        <div class="skills__bar">
-                            <div class="skills__line" style="width: 60%;">
-                            </div>
-                        </div>
+                    <div class="services__item services__item--chat">
+
+                        <h3 class="services__subtitle">
+                            Поддержка сайта
+                        </h3>
+
+                        <p>
+                            Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
+                        </p>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
 </body>
 

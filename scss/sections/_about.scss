@@ -1,24 +1,19 @@
 .about {
-    
-    &__text {
+
+    p {
         line-height: 1.5;
+        margin-bottom: 30px;
 
         @include r(576) {
+            margin-bottom: 16px;
             font-size: 16px;
             line-height: 1.6;
         }
 
-        &+& {
-            margin-top: 30px;
-
-            @include r(576) {
-                margin-top: 16px;
-            }
-
+        &:last-child {
+            margin-bottom: 0;
         }
 
     }
 
 }
-
-

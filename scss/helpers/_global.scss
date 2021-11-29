@@ -24,6 +24,12 @@ body {
     margin: 0 auto;
 }
 
+.heading {
+    @include r(768) {
+        text-align: center;
+    }
+}
+
 .logo {
     max-width: 158px;
     transition: opacity 0.3s, box-shadow 0.5s;
@@ -49,6 +55,11 @@ body {
     }
 }
 
+.mobil-burger {
+    display: none;
+}
+
+
 .menu__link,
 .header__link {
     &:focus {
@@ -62,6 +73,17 @@ body {
 
     &:active {
         opacity: 0.7;
+    }
+}
+
+.header__link {
+    &:focus {
+        padding-bottom: 35px;
+        bottom: 25px;
+
+        @include r(576) {
+            bottom: 15px;
+        }
     }
 }
 
@@ -104,5 +126,10 @@ body {
         background: rgba(35, 82, 222, 0.1);
         bottom: 5px;
         z-index: -1;
+
+        @include r(576) {
+            height: 10px;
+            bottom: 3px;
+        }
     }
 }
