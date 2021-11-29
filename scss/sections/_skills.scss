@@ -1,13 +1,5 @@
 .skills {
-    padding: 140px 0;
     background-color: #F6F6F8;
-
-    @include r(768) {
-        padding: 80px 0;
-    }
-    @include r(576) {
-        padding: 53px 0 50px;
-    }
 
     &__wrapper {
         display: flex;
@@ -76,6 +68,8 @@
     }
 
     &__name {
+        display: flex;
+        align-items: center;
         width: 65px;
         font-weight: 600;
         text-transform: uppercase;
