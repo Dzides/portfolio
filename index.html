@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -226,7 +227,65 @@
 
         </section>
 
+        <section class="portfolio same-indent">
+            <div class="container">
+
+                <div class="heading">
+                    <h2 class="title">
+                        Мои работы
+                    </h2>
+                </div>
+
+                <div class="portfolio__filter">
+                    <button class="portfolio__btn" data-filter="all">Все работы</button>
+                    <button class="portfolio__btn" data-filter=".category-a">Лендинги</button>
+                    <button class="portfolio__btn" data-filter=".category-b">Корпоративные</button>
+                    <button class="portfolio__btn" data-filter=".category-c">E-commerce</button>
+                </div>
+
+                <div class="portfolio__board">
+
+                    <a class="portfolio__image mix category-c" href="images/portfolio_img/img1x2.jpg" data-fancybox="gallery">
+                        <img src="images/portfolio_img/img1.jpg" alt="Постер E-commerce">
+                    </a>
+
+                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img2x2.jpg" data-fancybox="gallery">
+                        <img src="images/portfolio_img/img2.jpg" alt="Постер лендинг">
+                    </a>
+
+                    <a class="portfolio__image mix category-c" href="images/portfolio_img/img3x2.jpg" data-fancybox="gallery">
+                        <img src="images/portfolio_img/img3.jpg" alt="Постер E-commerce">
+                    </a>
+
+                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img4x2.jpg" data-fancybox="gallery">
+                        <img src="images/portfolio_img/img4.jpg" alt="Постер лендинг">
+                    </a>
+
+                    <a class="portfolio__image mix category-b" href="images/portfolio_img/img5x2.jpg" data-fancybox="gallery">
+                        <img src="images/portfolio_img/img5.jpg" alt="Постер корпоративный сайт">
+                    </a>
+
+                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img6x2.jpg" data-fancybox="gallery">
+                        <img src="images/portfolio_img/img6.jpg" alt="Постер лендинг">
+                    </a>
+
+                </div>
+
+                    <button class="portfolio__more" type="button">
+                        Загрузить еще
+                    </button>
+
+            </div>
+
+        </section>
+
     </main>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
