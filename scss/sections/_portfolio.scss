@@ -62,11 +62,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 20px;
+        gap: 45px;
         margin-bottom: 60px;
 
         @include r(992) {
             justify-content: space-evenly;
+            gap: 30px;
         }
 
         @include r(576) {
