@@ -166,7 +166,6 @@ body {
   background-size: cover;
   color: #fff;
   z-index: 2;
-  background-color: #2352DE;
 }
 @media only screen and (max-width: 768px) {
   .header {
@@ -181,8 +180,7 @@ body {
   left: 0;
   top: 0;
   z-index: 0;
-  background-color: #2352DE;
-  opacity: 0.5;
+  background-color: rgba(35, 82, 222, 0.5);
 }
 @media only screen and (max-width: 768px) {
   .header__top {
