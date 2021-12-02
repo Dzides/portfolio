@@ -1,10 +1,10 @@
 $bg: #fff;
 $text: #333;
 $secondary: #2352DE;
+$menu-mobil-bg: #7792E0;
 
 @mixin r($width) {
     @media only screen and (max-width: $width+ "px") {
         @content;
     }
 }
-

@@ -80,6 +80,11 @@
         width: 360px;
         height: 360px;
         overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+
+        &:focus {
+            transform: scale(1.1);
+        }
 
         @include r(1200) {
             width: 300px;
@@ -104,7 +109,7 @@
         img {
             height: 100%;
             object-fit: cover;
-            transition: all 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
 
             &:hover {
                 transform: scale(1.3);

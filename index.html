@@ -20,60 +20,71 @@
 
     <header class="header" id="header" style="background-image: url(images/bg-img.jpg);">
 
+        <div class="header__top">
+
+            <div class="container">
+
+                <nav class="header__navigation">
+
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="Логотип сайта">
+                    </a>
+
+                    <button class="header__burger">
+                        <span></span>
+                    </button>
+
+                    <div class="header__menu">
+
+                        <ul class="header__list">
+
+                            <li class="header__item">
+                                <a class="header__link" href="#about">
+                                    Обо мне
+                                </a>
+                            </li>
+
+                            <li class="header__item">
+                                <a class="header__link" href="#skills">
+                                    Навыки
+                                </a>
+                            </li>
+
+                            <li class="header__item">
+                                <a class="header__link" href="#services">
+                                    Услуги
+                                </a>
+                            </li>
+
+                            <li class="header__item">
+                                <a class="header__link" href="#portfolio">
+                                    Порфолио
+                                </a>
+                            </li>
+
+                            <li class="header__item">
+                                <a class="header__link" href="#">
+                                    Отзывы
+                                </a>
+                            </li>
+
+                            <li class="header__item">
+                                <a class="header__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </div>
+
         <div class="container">
-
-            <nav class="menu">
-
-                <a class="logo header__logo" href="#">
-                    <img class="logo__img" src="images/logo.svg" alt="Логотип сайта">
-                </a>
-
-                <button class="mobil-burger">
-                    <span></span>
-                </button>
-
-                <ul class="menu__list">
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#about">
-                            Обо мне
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#skills">
-                            Навыки
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Услуги
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Порфолио
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Отзывы
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Контакты
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
 
             <div class="header__content">
 
@@ -86,7 +97,9 @@
 
             </div>
 
-            <a class="header__link" href="#">смотреть работы</a>
+            <a class="header__link-content" href="#portfolio">смотреть работы</a>
+
+        </div>
 
         </div>
 
@@ -173,7 +186,7 @@
 
         </section>
 
-        <section class="services same-indent">
+        <section class="services same-indent" id="services">
 
             <div class="container">
 
@@ -227,7 +240,7 @@
 
         </section>
 
-        <section class="portfolio same-indent">
+        <section class="portfolio same-indent" id="portfolio">
             <div class="container">
 
                 <div class="heading">
@@ -245,35 +258,41 @@
 
                 <div class="portfolio__board">
 
-                    <a class="portfolio__image mix category-c" href="images/portfolio_img/img1x2.jpg" data-fancybox="gallery">
+                    <a class="portfolio__image mix category-c" href="images/portfolio_img/img1x2.jpg"
+                        data-fancybox="gallery">
                         <img src="images/portfolio_img/img1.jpg" alt="Постер E-commerce">
                     </a>
 
-                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img2x2.jpg" data-fancybox="gallery">
+                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img2x2.jpg"
+                        data-fancybox="gallery">
                         <img src="images/portfolio_img/img2.jpg" alt="Постер лендинг">
                     </a>
 
-                    <a class="portfolio__image mix category-c" href="images/portfolio_img/img3x2.jpg" data-fancybox="gallery">
+                    <a class="portfolio__image mix category-c" href="images/portfolio_img/img3x2.jpg"
+                        data-fancybox="gallery">
                         <img src="images/portfolio_img/img3.jpg" alt="Постер E-commerce">
                     </a>
 
-                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img4x2.jpg" data-fancybox="gallery">
+                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img4x2.jpg"
+                        data-fancybox="gallery">
                         <img src="images/portfolio_img/img4.jpg" alt="Постер лендинг">
                     </a>
 
-                    <a class="portfolio__image mix category-b" href="images/portfolio_img/img5x2.jpg" data-fancybox="gallery">
+                    <a class="portfolio__image mix category-b" href="images/portfolio_img/img5x2.jpg"
+                        data-fancybox="gallery">
                         <img src="images/portfolio_img/img5.jpg" alt="Постер корпоративный сайт">
                     </a>
 
-                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img6x2.jpg" data-fancybox="gallery">
+                    <a class="portfolio__image mix category-a" href="images/portfolio_img/img6x2.jpg"
+                        data-fancybox="gallery">
                         <img src="images/portfolio_img/img6.jpg" alt="Постер лендинг">
                     </a>
 
                 </div>
 
-                    <button class="portfolio__more" type="button">
-                        Загрузить еще
-                    </button>
+                <button class="portfolio__more" type="button">
+                    Загрузить еще
+                </button>
 
             </div>
 
