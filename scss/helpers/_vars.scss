@@ -8,3 +8,9 @@ $menu-mobil-bg: #7792E0;
         @content;
     }
 }
+
+@mixin desktop {
+    @media (min-width: (1025px)) {
+        @content;
+    }
+}

@@ -81,8 +81,10 @@
             box-shadow: 0 0 0 3px $secondary;
         }
 
-        &:hover {
-            opacity: 0.7;
+        @include desktop {
+            &:hover {
+                opacity: 0.7;
+            }
         }
 
         &:active {
@@ -227,12 +229,9 @@
             }
         }
 
-        &:hover {
-            border-color: $bg;
-
-            @include r(768) {
-                border-bottom: none;
-                background-color: rgba($secondary, 0.7);
+        @include desktop {
+            &:hover {
+                border-color: $bg;
             }
         }
 
@@ -266,8 +265,10 @@
                 }
             }
 
-            &:hover {
-                border-color: $bg;
+            @include desktop {
+                &:hover {
+                    border-color: $bg;
+                }
             }
 
             &:active {
