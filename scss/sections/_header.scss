@@ -47,7 +47,7 @@
             }
 
             &--animate {
-                background-color: $menu-mobil-bg;
+                background-color: rgba($menu-mobil-bg, 0.8);
             }
         }
     }

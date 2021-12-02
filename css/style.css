@@ -209,7 +209,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .header__top--animate {
-    background-color: #7792E0;
+    background-color: rgba(119, 146, 224, 0.8);
   }
 }
 .header__navigation {
