@@ -51,19 +51,19 @@
 
         &--code {
             &:before {
-                background-image: url(../images/code-icon.svg);
+                background-image: url(../images/services-icons/code-icon.svg);
             }
         }
 
         &--dev {
             &:before {
-                background-image: url(../images/dev-icon.svg);
+                background-image: url(../images/services-icons/dev-icon.svg);
             }
         }
 
         &--chat {
             &:before {
-                background-image: url(../images/chat-icon.svg);
+                background-image: url(../images/services-icons/chat-icon.svg);
             }
         }
     }

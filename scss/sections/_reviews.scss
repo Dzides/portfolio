@@ -1,0 +1,180 @@
+.reviews {
+    background-color: $light-bg;
+
+    @include r(576) {
+        position: relative;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+
+        @include r(992) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include r(576) {
+            display: block;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+        margin-right: 100px;
+        text-align: center;
+
+        @include r(1200) {
+            margin-right: 50px;
+        }
+
+        @include r(992) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+
+        @include r(576) {
+            max-width: 345px;
+            margin: 0 auto;
+        }
+    }
+
+    &__avatar {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @include r(576) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__name {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        color: $secondary;
+
+        @include r(576) {
+            font-size: 20px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 24px;
+
+        @include r(768) {
+            font-size: 20px;
+        }
+
+        @include r(576) {
+            width: 280px;
+            font-size: 16px;
+        }
+    }
+
+    &__video {
+        position: relative;
+        max-width: 570px;
+        width: 100%;
+        height: 400px;
+
+        @include r(1200) {
+            max-width: 470px;
+        }
+
+        @include r(992) {
+            max-width: 100%;
+            height: 325px;
+        }
+
+        @include r(768) {
+            max-width: 100%;
+            height: 250px;
+        }
+
+        @include r(576) {
+            position: absolute;
+            max-width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            top: 47%;
+            left: 50%;
+            transform: translateX(40%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba($dark-bg, 0.3);
+            transition: 0.3s;
+
+        }
+
+        @include desktop {
+            &:hover {
+                &:before {
+                    background: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
+        }
+
+        &:active {
+            &:before {
+                background: rgba(0, 0, 0, 0.45);
+            }
+        }
+    }
+
+    &__icon {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        transition: 0.3s;
+
+        @include r(576) {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        @include desktop {
+            &:hover {
+                width: 125px;
+                height: 125px;
+            }
+        }
+
+        &:active {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+
+}

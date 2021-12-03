@@ -2,6 +2,10 @@ $bg: #fff;
 $text: #333;
 $secondary: #2352DE;
 $menu-mobil-bg: #7792E0;
+$light-bg: #F6F6F8;
+$brd-light: #DBDBED;
+$dark-bg: #000000;
+$medium-bg: #343740;
 
 @mixin r($width) {
     @media only screen and (max-width: $width+ "px") {
