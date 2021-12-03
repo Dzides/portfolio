@@ -1,4 +1,8 @@
 .stats {
+    &>.same-indent {
+        padding-top: 138px;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -29,6 +33,7 @@
             min-height: 240px;
             padding: 35px 10px;
         }
+
         @include r(768) {
             width: 48%;
             min-height: 220px;
@@ -71,23 +76,30 @@
             margin-bottom: 15px;
         }
 
-        @include r(576) {
+        @include r(768) {
             height: 40px;
+        }
+
+        @include r(576) {
+            height: 35px;
             margin-bottom: 10px;
         }
 
     }
 
     &__text {
-        margin: auto 0 20px;
+        max-width: 200px;
+        margin: auto auto 20px;
         font-size: 18px;
         overflow: hidden;
 
         @include r(992) {
+            max-width: 160px;
             margin-bottom: 15px;
         }
 
         @include r(576) {
+            max-width: 130px;
             margin-bottom: 10px;
             font-size: 14px;
         }

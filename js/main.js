@@ -10,6 +10,7 @@ $(function () {
     $('.header__link').on('click', function () {
        $('.header__burger').removeClass('header__burger--active');
        $('.header__menu').removeClass('header__menu--active');
+       $('body').removeClass('lock');
 
     });
 

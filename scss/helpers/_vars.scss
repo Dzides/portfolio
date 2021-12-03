@@ -6,6 +6,7 @@ $light-bg: #F6F6F8;
 $brd-light: #DBDBED;
 $dark-bg: #000000;
 $medium-bg: #343740;
+$form-text: #9C9CAB;
 
 @mixin r($width) {
     @media only screen and (max-width: $width+ "px") {

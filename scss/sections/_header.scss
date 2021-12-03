@@ -270,6 +270,9 @@
         @include r(768) {
             height: calc(100vh - 50px);
         }
+        @include r(576) {
+            height: calc(100vh + 50px);
+        }
     }
 
     &__title {
@@ -279,7 +282,7 @@
 
         @include r(768) {
             font-size: 38px;
-            width: 100%;
+            max-width: 100%;
         }
 
         @include r(576) {
