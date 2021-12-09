@@ -156,7 +156,7 @@
         @include desktop {
             &:hover {
                 &:before {
-                    background: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.6);
                 }
 
                 &:after {
@@ -173,7 +173,7 @@
 
         &:active {
             &:before {
-                background: rgba(0, 0, 0, 0.45);
+                background-color: rgba(0, 0, 0, 0.45);
             }
 
             &:after {

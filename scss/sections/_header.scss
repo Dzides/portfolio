@@ -78,7 +78,7 @@
     &__title {
         font-size: 48px;
         font-weight: 400;
-        max-width: 60%;
+        max-width: 700px;
 
         @include r(768) {
             font-size: 38px;
@@ -87,6 +87,20 @@
 
         @include r(576) {
             font-size: 28px;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-weight: 700;
+        font-size: 90px;
+
+        @include r(768) {
+            font-size: 70px;
+        }
+
+        @include r(576) {
+            font-size: 40px;
         }
     }
 
@@ -138,20 +152,6 @@
             transform: translateX(-50%);
         }
     }
-
-    span {
-        display: block;
-        font-weight: 700;
-        font-size: 90px;
-
-        @include r(768) {
-            font-size: 70px;
-        }
-
-        @include r(576) {
-            font-size: 40px;
-        }
-    }
 }
 
 .burger {
@@ -194,8 +194,10 @@
                 bottom: 9px;
             }
 
-            span {
-                transform: scale(0);
+            .burger {
+                &__line {
+                    transform: scale(0);
+                }
             }
         }
     }
@@ -227,7 +229,7 @@
         transition: all 0.3s ease 0s;
         overflow: auto;
         z-index: 3;
-        
+
         &--active {
             top: 0;
         }
