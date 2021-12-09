@@ -1,8 +1,4 @@
 .stats {
-    &>.same-indent {
-        padding-top: 138px;
-    }
-
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -16,9 +12,12 @@
     }
 
     &__item {
+        position: relative;
         display: flex;
         flex-direction: column;
-        padding: 50px 10px;
+        justify-content: end;
+        align-items: center;
+        padding: 0 10px 50px;
         max-width: 280px;
         min-height: 287px;
         width: 100%;
@@ -31,85 +30,100 @@
 
         @include r(992) {
             min-height: 240px;
-            padding: 35px 10px;
+            padding: 0 10px 35px;
         }
 
         @include r(768) {
             width: 48%;
             min-height: 220px;
-            padding: 30px 10px;
+            padding: 0 10px 30px;
         }
 
         @include r(576) {
+            justify-content: flex-end;
             width: 47%;
             min-height: 170px;
-            padding: 25px 10px;
+            height: 100%;
+            padding: 0 10px 25px;
         }
-    }
 
-    &__icon {
-        width: 100%;
-        height: 80px;
-        margin: 0 auto 20px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 80px;
+            top: 50px;
+            left: 0px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+
+            @include r(992) {
+                height: 60px;
+                top:30px;
+            }
+            @include r(768) {
+                height: 45px;
+            }
+            @include r(576) {
+                height: 35px;
+                top: 22px;
+            }
+        }
 
         &--works {
-            background-image: url(../images/stats-icons/works.svg);
+            &:before {
+                background-image: url(../images/stats-icons/works.svg);
+            }
         }
 
         &--clients {
-            background-image: url(../images/stats-icons/clients.svg);
+            &:before {
+                background-image: url(../images/stats-icons/clients.svg);
+            }
         }
 
         &--coffee {
-            background-image: url(../images/stats-icons/coffee.svg);
+            &:before {
+                background-image: url(../images/stats-icons/coffee.svg);
+            }
         }
 
         &--reviews {
-            background-image: url(../images/stats-icons/reviews.svg);
+            &:before {
+                background-image: url(../images/stats-icons/reviews.svg);
+            }
         }
-
-        @include r(992) {
-            height: 60px;
-            margin-bottom: 15px;
-        }
-
-        @include r(768) {
-            height: 40px;
-        }
-
-        @include r(576) {
-            height: 35px;
-            margin-bottom: 10px;
-        }
-
     }
 
     &__text {
         max-width: 200px;
-        margin: auto auto 20px;
+        padding-bottom: 20px;
+        margin-top: auto;
+        font-weight: 400;
         font-size: 18px;
-        overflow: hidden;
+
 
         @include r(992) {
-            max-width: 160px;
-            margin-bottom: 15px;
+            // max-width: 160px;
         }
 
         @include r(576) {
             max-width: 130px;
-            margin-bottom: 10px;
+            padding-bottom: 0;
             font-size: 14px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
     &__num {
-        margin-top: auto;
         font-weight: 600;
         font-size: 44px;
         line-height: 1;
+
 
         @include r(992) {
             font-size: 38px;
@@ -117,6 +131,7 @@
 
         @include r(576) {
             font-size: 30px;
+
         }
     }
 }

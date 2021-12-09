@@ -1,15 +1,15 @@
 $(function () {
 
-    $('.header__burger').on('click', function () {
-       $('.header__burger').toggleClass('header__burger--active');
-       $('.header__menu').toggleClass('header__menu--active');
+    $('.burger').on('click', function () {
+       $('.burger').toggleClass('burger--active');
+       $('.menu').toggleClass('menu--active');
        $('body').toggleClass('lock');
 
     });
 
-    $('.header__link').on('click', function () {
-       $('.header__burger').removeClass('header__burger--active');
-       $('.header__menu').removeClass('header__menu--active');
+    $('.menu__link').on('click', function () {
+       $('.burger').removeClass('burger--active');
+       $('.menu').removeClass('menu--active');
        $('body').removeClass('lock');
 
     });

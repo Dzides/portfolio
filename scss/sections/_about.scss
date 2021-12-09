@@ -1,19 +1,18 @@
 .about {
-
-    p {
+    &__content {
         line-height: 1.5;
-        margin-bottom: 30px;
 
         @include r(576) {
-            margin-bottom: 16px;
             font-size: 16px;
             line-height: 1.6;
         }
 
-        &:last-child {
-            margin-bottom: 0;
+        p:not(:last-child) {
+            margin-bottom: 30px;
+
+            @include r(576) {
+                margin-bottom: 16px;
+            }
         }
-
     }
-
 }

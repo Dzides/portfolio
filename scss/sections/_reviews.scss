@@ -5,6 +5,11 @@
         position: relative;
     }
 
+    &__title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     &__wrapper {
         display: flex;
         justify-content: center;
@@ -125,6 +130,26 @@
             top: 0;
             background-color: rgba($dark-bg, 0.3);
             transition: 0.3s;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 86px;
+            height: 100px;
+            background-image: url(../images/reviews-img/play.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+
+            @include r(576) {
+                width: 17px;
+                height: 20px;
+            }
 
         }
 
@@ -133,48 +158,34 @@
                 &:before {
                     background: rgba(0, 0, 0, 0.6);
                 }
+
+                &:after {
+                    width: 130px;
+                    height: 150px;
+                }
+
             }
         }
 
         &:focus {
-            box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
+            box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
         }
 
         &:active {
             &:before {
                 background: rgba(0, 0, 0, 0.45);
             }
-        }
-    }
 
-    &__icon {
-        content: '';
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        right: 50%;
-        top: 50%;
-        transform: translate(50%, -50%);
-        transition: 0.3s;
+            &:after {
+                width: 52px;
+                height: 60px;
 
-        @include r(576) {
-            width: 40px;
-            height: 40px;
-            padding: 10px;
-        }
-
-        @include desktop {
-            &:hover {
-                width: 125px;
-                height: 125px;
+                @include r(576) {
+                    width: 23px;
+                    height: 28px;
+                }
             }
         }
-
-        &:active {
-            width: 60px;
-            height: 60px;
-        }
     }
-
 
 }

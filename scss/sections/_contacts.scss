@@ -60,13 +60,21 @@
         }
     }
 
+    @include r(992) {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+}
+
+.adress {
     &__link {
         display: inline-block;
         width: 100%;
         margin-bottom: 10px;
         color: $secondary;
         font-size: 16px;
-        transition: box-shadow 0.3s, opacity 0.3s, ease-in-out 0.3s;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.3s, box-shadow 0.3s, opacity 0.3s, ease-in-out 0.3s;
 
         @include r(768) {
             margin-bottom: 15px;
@@ -80,17 +88,17 @@
 
         @include desktop {
             &:hover {
-                text-decoration: underline;
+                text-decoration: underline $secondary;
             }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
+            border-radius: 3px;
         }
 
         &:active {
             opacity: 0.7;
-        }
-
-        &:focus {
-            box-shadow: 0px 0px 0px 2px rgba(35, 82, 222, 0.5);
-            border-radius: 3px;
         }
 
         &--email {
@@ -106,24 +114,19 @@
         }
 
     }
+}
+
+.social {
+    display: flex;
 
     @include r(992) {
-        margin-bottom: 15px;
-        font-size: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
     }
 
-    &__social {
-        display: flex;
-
-        @include r(992) {
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-
-        @include r(576) {
-            justify-content: start;
-            margin-bottom: 30px;
-        }
+    @include r(576) {
+        justify-content: start;
+        margin-bottom: 30px;
     }
 
     &__icon {
@@ -136,10 +139,12 @@
             margin-right: 15px;
         }
 
-        &:focus {
-            box-shadow: 0px 0px 0px 2px rgba(35, 82, 222, 0.5);
-            border-radius: 3px;
-        }
+    }
+
+    &__link {
+        display: block;
+        width: 44px;
+        height: 44px;
 
         @include desktop {
             &:hover {
@@ -147,14 +152,15 @@
             }
         }
 
+        &:focus {
+            box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
+            border-radius: 3px;
+        }
+
         &:active {
             box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
-            border-radius: 13px;
+            border-radius: 6px;
         }
-    }
-
-    &__image {
-        display: inline-block;
     }
 }
 
@@ -230,11 +236,9 @@
         }
     }
 
-    &__name,
-    &__phone {
+    &__field {
         background-color: $light-bg;
         padding: 13px 15px;
-        height: 44px;
         font-size: 14px;
         color: $form-text;
         transition: box-shadow 0.3s, color 0.3s;
@@ -248,7 +252,7 @@
         }
 
         &:focus {
-            box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
+            box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
         }
 
         @include desktop {
@@ -256,41 +260,43 @@
                 color: $dark-bg;
             }
         }
-    }
 
-    &__text {
-        height: 115px;
-        padding: 13px 15px;
-        margin-bottom: 30px;
-        border: none;
-        font-size: 14px;
-        color: $form-text;
-        background-color: $light-bg;
-        resize: none;
-        transition: box-shadow 0.3s, color 0.3s;
-
-        @include r(992) {
-            height: 150px;
-            font-size: 18px;
-        }
-
-        @include r(576) {
+        &--text {
             height: 115px;
-            margin-bottom: 15px;
+            padding: 13px 15px;
+            margin-bottom: 30px;
+            border: none;
             font-size: 14px;
-        }
+            color: $form-text;
+            background-color: $light-bg;
+            resize: vertical;
+            transition: box-shadow 0.3s, color 0.3s;
 
-        &:focus {
-            box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
-        }
-
-        @include desktop {
-            &:hover {
-                color: $dark-bg;
+            @include r(992) {
+                height: 150px;
+                font-size: 18px;
             }
-        }
 
+            @include r(576) {
+                height: 115px;
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+            }
+
+            @include desktop {
+                &:hover {
+                    color: $dark-bg;
+                }
+            }
+
+        }
     }
+
+
 
     &__button {
         margin-right: auto;
