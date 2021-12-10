@@ -1315,7 +1315,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1331,6 +1330,7 @@ body {
 
 .stats__item {
   position: relative;
+  padding: 150px 45px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,18 +1338,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px 50px;
+  text-align: center;
   max-width: 280px;
-  height: 287px;
   width: 100%;
   background-color: #F6F6F8;
   border: 1px solid #DBDBED;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1360,39 +1357,33 @@ body {
 
 @media only screen and (max-width: 992px) {
   .stats__item {
-    min-height: 240px;
-    padding: 0 10px 35px;
+    padding: 120px 10px 35px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .stats__item {
     width: 48%;
-    min-height: 220px;
-    padding: 0 10px 30px;
+    padding: 100px 10px 30px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .stats__item {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 47%;
-    min-height: 170px;
-    height: 100%;
-    padding: 0 10px 25px;
+    max-width: 165px;
+    padding: 70px 15px 0;
   }
 }
 
 .stats__item:before {
   content: '';
   position: absolute;
-  display: block;
   width: 100%;
   height: 80px;
   top: 50px;
-  left: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1435,22 +1426,18 @@ body {
 }
 
 .stats__text {
-  max-width: 200px;
-  padding-bottom: 20px;
   margin-top: auto;
-  font-weight: 400;
+  margin-bottom: auto;
+  padding-bottom: 20px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 576px) {
   .stats__text {
-    max-width: 130px;
-    padding-bottom: 0;
     font-size: 14px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    line-height: 1.3;
+    padding-bottom: 10px;
   }
 }
 
@@ -1469,6 +1456,7 @@ body {
 @media only screen and (max-width: 576px) {
   .stats__num {
     font-size: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1910,104 +1898,5 @@ body {
 .footer__logo {
   display: block;
   margin: 0 auto;
-}
-
-.wrapper {
-  padding: 150px 0;
-}
-
-.items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media only screen and (max-width: 576px) {
-  .items {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-
-.item {
-  position: relative;
-  padding: 150px 45px 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  max-width: 280px;
-  width: 100%;
-  background-color: lightgrey;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 576px) {
-  .item {
-    max-width: 165px;
-    padding: 70px 15px 0;
-  }
-}
-
-.item::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  top: 50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-image: url(../images/stats-icons/coffee.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-@media only screen and (max-width: 576px) {
-  .item::before {
-    height: 35px;
-    top: 25px;
-  }
-}
-
-.text {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-bottom: 20px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-@media only screen and (max-width: 576px) {
-  .text {
-    font-size: 14px;
-    line-height: 1.3;
-    padding-bottom: 10px;
-  }
-}
-
-.num {
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 1;
-}
-
-@media only screen and (max-width: 576px) {
-  .num {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
