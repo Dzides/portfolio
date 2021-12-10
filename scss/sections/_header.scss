@@ -59,33 +59,25 @@
         align-items: center;
     }
 
-    &__content {
+    &__title {
         position: relative;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         height: calc(100vh - 127px);
+        font-size: 48px;
+        font-weight: 400;
+        max-width: 700px;
         z-index: 2;
 
         @include r(768) {
+            max-width: 100%;
             height: calc(100vh - 50px);
+            font-size: 38px;
         }
 
         @include r(576) {
             height: calc(100vh + 50px);
-        }
-    }
-
-    &__title {
-        font-size: 48px;
-        font-weight: 400;
-        max-width: 700px;
-
-        @include r(768) {
-            font-size: 38px;
-            max-width: 100%;
-        }
-
-        @include r(576) {
             font-size: 28px;
         }
     }
