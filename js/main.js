@@ -16,9 +16,9 @@ $(function () {
 
     $(window).scroll(function () {
        if ($(document).scrollTop() > 100) {
-          $(".header__top").addClass("header__top--animate");
+          $(".header__nav").addClass("header__nav--animate");
        } else {
-          $(".header__top").removeClass("header__top--animate");
+          $(".header__nav").removeClass("header__nav--animate");
        }
     });
 
