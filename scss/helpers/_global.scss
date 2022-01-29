@@ -22,6 +22,40 @@ body {
     overflow: hidden;
 }
 
+.return {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba($menu-mobil-bg, 0.8);
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    z-index: 10;
+
+    &__animate {
+        display: block;
+
+        @include r(768) {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+        border-top: 5px solid white;
+        border-right: 5px solid white;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 60%) rotate(-45deg);
+    }
+}
+
 .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -29,21 +63,35 @@ body {
 }
 
 .logo {
-    max-width: 158px;
+
     transition: opacity 0.3s, box-shadow 0.5s;
 
-    @include r(992) {
-        max-width: 120px;
+    &__img {
+        width: 158px;
+        max-width: 100%;
+        height: 53px;
+        object-fit: cover;
+        object-position: center;
+
+        @include r(992) {
+            max-width: 120px;
+            height: 40px;
+        }
+
+        @include r(576) {
+            max-width: 110px;
+            height: 36px;
+        }
     }
+
+
 
     @include r(768) {
         position: relative;
         z-index: 4;
     }
 
-    @include r(576) {
-        max-width: 110px;
-    }
+
 
     @include desktop {
         &:hover {

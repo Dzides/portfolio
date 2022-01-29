@@ -1,6 +1,4 @@
 .contacts {
-    padding-top: 0;
-
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -136,7 +134,7 @@
         transition: box-shadow 0.3s, opacity 0.3s, ease-in-out 0.3s;
 
         &:not(:last-child) {
-            margin-right: 15px;
+            margin-right: 20px;
         }
 
     }
@@ -262,7 +260,8 @@
         }
 
         &--text {
-            height: 115px;
+            min-height: 115px;
+            max-height: 250px;
             padding: 13px 15px;
             margin-bottom: 30px;
             border: none;

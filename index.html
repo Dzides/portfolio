@@ -16,63 +16,73 @@
 </head>
 
 <body>
-
+    <a class="return" href="#header">
+        <span class="sr-only">Вернуться наверх</span>
+    </a>
     <header class="header" id="header" style="background-image: url(images/header-img/bg-img.jpg);">
 
+        <div class="header__wrapper">
+
+            <div class="container">
+
+                <nav class="header__nav">
+
+                    <a class="header__logo logo" href="#header">
+                        <img class="logo__img" src="images/logo/logo.svg" alt="Логотип сайта">
+                    </a>
+
+                    <button class="burger" type="button">
+                        <span class="burger__line"></span>
+                        <span class="sr-only">Открыть/закрыть меню сайта</span>
+                    </button>
+
+                    <ul class="menu">
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">
+                                Обо мне
+                            </a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#skills">
+                                Навыки
+                            </a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#services">
+                                Услуги
+                            </a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#portfolio">
+                                Порфолио
+                            </a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#contacts">
+                                Контакты
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
         <div class="container">
-
-            <nav class="header__nav">
-
-                <a class="header__logo logo" href="#">
-                    <img class="logo__img" src="images/logo/logo.svg" alt="Логотип сайта">
-                </a>
-
-                <button class="burger">
-                    <span class="sr-only">Открыть/закрыть меню сайта</span>
-                    <span class="burger__line"></span>
-                </button>
-
-                <ul class="menu">
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#about">
-                            Обо мне
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#skills">
-                            Навыки
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#services">
-                            Услуги
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#portfolio">
-                            Порфолио
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#reviews">
-                            Отзывы
-                        </a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a class="menu__link" href="#contacts">
-                            Контакты
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
 
             <h1 class="header__title">
                 Привет, я Иван Иванов
@@ -133,24 +143,24 @@
                         <li class="skills__item">
                             <span class="skills__name">html</span>
                             <div class="skills__bar">
-                                <div class="skills__line" style="width: 85%">
-                                </div>
+                                <span class="skills__line" style="width: 85%">
+                                </span>
                             </div>
                         </li>
 
                         <li class="skills__item">
                             <span class="skills__name">css</span>
                             <div class="skills__bar">
-                                <div class="skills__line" style="width: 80%">
-                                </div>
+                                <span class="skills__line" style="width: 80%">
+                                </span>
                             </div>
                         </li>
 
                         <li class="skills__item">
                             <span class="skills__name">js</span>
                             <div class="skills__bar">
-                                <div class="skills__line" style="width: 60%">
-                                </div>
+                                <span class="skills__line" style="width: 60%">
+                                </span>
                             </div>
                         </li>
 
@@ -212,16 +222,16 @@
 
                 <ul class="portfolio__filter">
                     <li class="portfolio__item">
-                        <button class="portfolio__btn" data-filter="all">Все работы</button>
+                        <button class="portfolio__btn" type="button" data-filter="all">Все работы</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio__btn" data-filter=".category-a">Лендинги</button>
+                        <button class="portfolio__btn" type="button" data-filter=".category-a">Лендинги</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio__btn" data-filter=".category-b">Корпоративные</button>
+                        <button class="portfolio__btn" type="button" data-filter=".category-b">Корпоративные</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio__btn" data-filter=".category-c">E-commerce</button>
+                        <button class="portfolio__btn" type="button" data-filter=".category-c">E-commerce</button>
                     </li>
                 </ul>
 
@@ -291,9 +301,7 @@
                         </figcaption>
 
                         <blockquote class="reviews__text">
-                            <p>
-                                Фантастика! Я всецело доволен работой этого специалиста. Быстро и качественно. Рекомендую!
-                            </p>
+                            Фантастика! Я всецело доволен работой этого специалиста. Быстро и качественно. Рекомендую!
                         </blockquote>
 
                     </figure>
@@ -345,11 +353,9 @@
 
             <div class="container">
 
-                <div class="heading">
-                    <h2 class="title">
-                        Контакты
-                    </h2>
-                </div>
+                <h2 class="title">
+                    Контакты
+                </h2>
 
                 <div class="contacts__wrapper">
 
@@ -373,29 +379,31 @@
                                     </a>
                                 </li>
                             </ul>
+
+
+                            <ul class="social">
+
+                                <li class="social__icon">
+                                    <a class="social__link social__link--inst" href="#" style="background-image: url(images/contact-icons/instagram.svg);">
+                                        <span class="sr-only">Иконка инстаграмм</span>
+                                    </a>
+                                </li>
+
+                                <li class="social__icon">
+                                    <a class="social__link social__link--facebook" href="#" style="background-image: url(images/contact-icons/facebook.svg);">
+                                        <span class="sr-only">Иконка фейсбук</span>
+                                    </a>
+                                </li>
+
+                                <li class="social__icon">
+                                    <a class="social__link social__link--telegram" href="#" style="background-image: url(images/contact-icons/telegram.svg);">
+                                        <span class="sr-only">Иконка телеграмм</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
                         </adress>
-
-                        <ul class="social">
-
-                            <li class="social__icon">
-                                <a class="social__link social__link--inst" href="#" style="background-image: url(images/contact-icons/instagram.svg);">
-                                    <span class="sr-only">Иконка инстаграмм</span>
-                                </a>
-                            </li>
-
-                            <li class="social__icon">
-                                <a class="social__link social__link--facebook" href="#" style="background-image: url(images/contact-icons/facebook.svg);">
-                                    <span class="sr-only">Иконка фейсбук</span>
-                                </a>
-                            </li>
-
-                            <li class="social__icon">
-                                <a class="social__link social__link--telegram" href="#" style="background-image: url(images/contact-icons/telegram.svg);">
-                                    <span class="sr-only">Иконка телеграмм</span>
-                                </a>
-                            </li>
-
-                        </ul>
 
                     </div>
 
@@ -409,7 +417,7 @@
                                     Ваше имя
                                 </label>
 
-                                <input class="form__field" type="text" id="name" placeholder="Иван">
+                                <input class="form__field" type="text" id="name" name="inputName" placeholder="Иван" required>
 
                             </div>
 
@@ -419,7 +427,7 @@
                                     Номер телефона
                                 </label>
 
-                                <input class="form__field" type="tel" id="tel" placeholder="+380501111111">
+                                <input class="form__field" type="tel" id="tel" name="inputTel" placeholder="+380501111111" required>
 
                             </div>
 
@@ -431,7 +439,7 @@
                                 Ваше сообщение
                             </label>
 
-                            <textarea class="form__field form__field--text" id="message" name="message" placeholder="Текст вашего сообщения"></textarea>
+                            <textarea class="form__field form__field--text" id="message" name="message" placeholder="Текст вашего сообщения" required></textarea>
 
                             <button class="button form__button" type="submit">
                                 Отправить
@@ -450,7 +458,7 @@
     </main>
 
     <footer class="footer">
-        <a class="footer__logo logo" href="#">
+        <a class="footer__logo logo" href="#header">
             <img class="logo__img" src="images/logo/logo.svg" alt="Логотип сайта">
         </a>
     </footer>

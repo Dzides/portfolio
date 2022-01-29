@@ -4,6 +4,7 @@
     &__wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         @include r(768) {
             flex-wrap: wrap;
@@ -13,9 +14,10 @@
 
     &__image {
         max-width: 415px;
-        height: 450px;
         width: 100%;
-        margin-right: 90px;
+        max-height: 450px;
+        height: 100%;
+        margin-right: 30px;
         object-fit: cover;
 
         @include r(768) {
@@ -33,6 +35,8 @@
     }
 
     &__progress {
+        max-width: 664px;
+        min-width: 55%;
         width: 100%;
 
         @include r(768) {
